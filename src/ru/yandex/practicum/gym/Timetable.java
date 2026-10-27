@@ -49,7 +49,7 @@ public class Timetable {
         return sessions.getOrDefault(minutes, List.of());
     }
 
-    public Map<Coach, Integer> getCountByCoaches () {
+    public Map<Coach, Integer> getCountByCoaches() {
         Map<Coach, Integer> coaches = new HashMap<>();
 
         for (TreeMap<Integer, List<TrainingSession>> perDay: timetable.values()) {
